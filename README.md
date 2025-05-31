@@ -1,5 +1,5 @@
-# webinal
-<!DOCTYPE html>
+# website menghitung BMI
+
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
