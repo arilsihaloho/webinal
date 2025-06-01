@@ -70,7 +70,7 @@
         name="nama"
         placeholder="Masukkan nama anda"
       />
-      <label for="beratBadan">Berat Badan (kg):</label>
+      <label for="beratBadan">Berat Badan (Kg):</label>
       <input
         type="number"
         id="beratBadan"
@@ -78,7 +78,7 @@
         step="0.1"
         placeholder="Masukkan berat badan"
       />
-      <label for="tinggiBadan">Tinggi Badan (m):</label>
+      <label for="tinggiBadan">Tinggi Badan (Cm):</label>
       <input
         type="number"
         id="tinggiBadan"
@@ -111,7 +111,7 @@
           return;
         }
 
-        const bmi = beratBadan / (tinggiBadan * tinggiBadan);
+        const bmi = beratBadan / ((tinggiBadan/100 )**2);
         let pesan = `Hai ${nama}, BMI anda ialah: ${bmi.toFixed(2)}<br>`;
 
         switch (true) {
